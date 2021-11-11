@@ -1,0 +1,31 @@
+Problem:    teste3
+Rows:       5
+Columns:    2 (2 integer, 0 binary)
+Non-zeros:  10
+Status:     INTEGER OPTIMAL
+Objective:  Z = 9600 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Z                        9600                             
+     2 corte                     300                         300 
+     3 tingimento                430                         540 
+     4 costura                   440                         440 
+     5 embalagem                  86                         300 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 xA           *             80             0               
+     2 xB           *            140             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,40 @@
+Problem:    teste2
+Rows:       4
+Columns:    4
+Non-zeros:  14
+Status:     OPTIMAL
+Objective:  Z = 17500 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Z            B          17500                             
+     2 tabua        NU           250                         250            10 
+     3 prancha      B           62.5                         600 
+     4 painel       NU           500                         500            30 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 xE           B            125             0               
+     2 xM           B           62.5             0               
+     3 xA           NL             0             0                         -10 
+     4 xP           NL             0             0                         -20 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 5.68e-14 on row 4
+        max.rel.err = 5.68e-17 on row 4
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 2.84e-14 on column 1
+        max.rel.err = 1.41e-16 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

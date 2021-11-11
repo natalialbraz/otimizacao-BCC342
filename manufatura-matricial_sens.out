@@ -1,0 +1,38 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    manufatura
+Objective:  z = 42840 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS   42840.00000  -42840.00000          -Inf    30600.00000      -1.00000        .      maquinas[Maq3]
+                                            .               +Inf    42840.00000          +Inf          +Inf
+
+     2 maquinas[Maq1]
+                    NU       3.00000        .               -Inf        1.00000   -8160.00000   26520.00000 maquinas[Maq2]
+                                        8160.00000       3.00000        9.00000          +Inf   91800.00000 x[Pro2]
+
+     3 maquinas[Maq2]
+                    BS       3.00000       1.00000          -Inf         .        -4080.00000   30600.00000 maquinas[Maq3]
+                                            .            4.00000        4.50000   16320.00000   91800.00000 maquinas[Maq1]
+
+     4 maquinas[Maq3]
+                    NU       9.00000        .               -Inf        3.00000   -2040.00000   30600.00000 x[Pro2]
+                                        2040.00000       9.00000       11.00000          +Inf   46920.00000 maquinas[Maq2]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    manufatura
+Objective:  z = 42840 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[Pro1]      BS       3.00000   10200.00000        .             1.00000    2040.00000   18360.00000 maquinas[Maq1]
+                                            .               +Inf        3.00000          +Inf          +Inf
+
+     2 x[Pro2]      BS       3.00000    4080.00000        .                -Inf        .        30600.00000 maquinas[Maq3]
+                                            .               +Inf        4.00000   20400.00000   91800.00000 maquinas[Maq1]
+
+End of report
